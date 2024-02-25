@@ -1,8 +1,8 @@
 import Classes from "./HeaderCardButton.module.css";
 import CartIcon from "../Cart/CartIcon";
-function HeaderCardButton() {
+function HeaderCardButton(props) {
   return (
-    <button className={Classes.button}>
+    <button className={Classes.button} onClick={props.onClick}>
       <span className={Classes.icon}>
         <CartIcon />
       </span>
